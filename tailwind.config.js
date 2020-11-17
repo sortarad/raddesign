@@ -12,6 +12,11 @@ module.exports = {
       },
       lineHeight: {
         'large': '270px',
+      },
+      fontSize: {
+        '5xl': '2.8rem',
+        '6xl': '3.8rem',
+        'veryLarge': '300px',
       }
     },
     backgroundColor: theme => ({
@@ -22,14 +27,10 @@ module.exports = {
       'circle': '50px',
     },
     height: {
-      imageBox: '792px',
+      imageBox: '757px',
+      xlImageBox: '589px',
+      circle: '1rem',
     },
-    fontSize: {
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '6xl': '4rem',
-      'veryLarge': '300px',
-    }
   },
   variants: {},
   plugins: [],

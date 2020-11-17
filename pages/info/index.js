@@ -7,7 +7,7 @@ export default function InfoPage() {
     return (
         <div className="flex flex-row w-full">
             <div className="w-infoBox flex flex-col justify-between pb-24 mt-4">
-                <NavBar />
+                <NavBar currentNav="info" />
                 <p className="text-2xl px-4 mt-24">YOUNG LAB is a global creative studio focused on design, development, and digital output.
                 The studio partners with culturally motivated clients within the art, fashion, and music landscapes
                      — bringing to life new digital ecosystems that showcase the breadth of content within a client's portfolio.</p>

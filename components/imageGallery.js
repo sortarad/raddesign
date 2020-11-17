@@ -2,7 +2,7 @@ import AdsBar from './adsBar';
 
 export default function ImageGallery() {
     return (
-        <div className="w-2/5 flex flex-row justify-between flex-1 h-imageBox">
+        <div className="w-full lg:w-2/5 flex flex-col-reverse lg:flex-row justify-between flex-1 h-auto lg:h-xlImageBox xl:h-imageBox">
             <AdsBar />
           <div className="h-full flex-1 overflow-y-scroll bg-black flex flex-col pb-12 hidden-scrollBar">
             <div className="flex flex-row justify-between px-4 pt-2 pb-6"> 

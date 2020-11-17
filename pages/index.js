@@ -10,21 +10,21 @@ export default function Home() {
       <Head>
         <title>RadDesign - HOME</title>
       </Head>
-      <div className="flex flex-row">
-        <div className="pl-4 w-3/5 mt-5">
-          <NavBar />
-          <div className="border-2 border-r-0 border-black mt-10">
+      <div className="flex flex-col lg:flex-row">
+        <div className="pl-4 pr-4 lg:pr-0 w-full lg:w-3/5 mt-5 pb-10 lg:pb-0">
+          <NavBar currentNav="youngLab" />
+          <div className="border-2 lg:border-r-0 border-black mt-10">
             <div className="flex flex-row justify-between items-center pl-6 pr-6">
-              <p className="text-6xl underline">The beauty evolution <br/>of: Kohl eyeliner</p>
-              <img src={"../static/arrow.svg"} />
+              <p className="text-5xl xl:text-6xl underline">The beauty evolution <br/>of: Kohl eyeliner</p>
+              <img src={"../static/arrow.svg"} className="w-24 hidden lg:flex" />
             </div>
             <div>
               <ul>
-                <li className="text-6xl border-t-2 border-black pl-6">Preserving local tradition</li>
-                <li className="text-6xl border-t-2 border-black pl-6">Shoe fantasy</li>
-                <li className="text-6xl border-t-2 border-black pl-6">Food for thought</li>
-                <li className="text-6xl border-t-2 border-black pl-6">Future fashion</li>
-                <li className="text-6xl border-t-2 border-black pl-6">The slip dress</li>
+                <li className="text-5xl xl:text-6xl border-t-2 border-black pl-6">Preserving local tradition</li>
+                <li className="text-5xl xl:text-6xl border-t-2 border-black pl-6">Shoe fantasy</li>
+                <li className="text-5xl xl:text-6xl border-t-2 border-black pl-6">Food for thought</li>
+                <li className="text-5xl xl:text-6xl border-t-2 border-black pl-6">Future fashion</li>
+                <li className="text-5xl xl:text-6xl border-t-2 border-black pl-6">The slip dress</li>
               </ul>
             </div>
           </div>

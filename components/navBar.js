@@ -1,11 +1,33 @@
 import Link from 'next/link';
 
-export default function NavBar() {
+const navData = [
+    {
+        name: "YOUNG LAB", 
+        selectedName: 'youngLab', 
+        href: "/",
+    },
+    {
+        name: "INFO", 
+        selectedName: 'info', 
+        href: "/info",
+    },
+    {
+        name: "CONTACT",
+        selectedName: 'contact', 
+        href: "contact",
+    },
+];
+
+export default function NavBar({ currentNav }) {
+    console.log("====>", currentNav)
     return (
         <ul className="flex flex-row">
-            <li className="mx-4 text-3xl font-bold cursor-pointer"><Link href="/">YOUNG LAB</Link></li>
-            <li className="mx-4 text-3xl font-bold cursor-pointer"><Link href="/info">INFO</Link></li>
-            <li className="mx-4 text-3xl font-bold cursor-pointer"><Link href="/contact">CONTACT</Link></li>
+            {navData.map((item, i) =>
+                <li key={i} className="mx-4 text-3xl font-bold cursor-pointer flex flex-row items-center">
+                    <div style={currentNav === item.selectedName ? {backgroundColor: "black"} : {}} className="w-4 h-circle border border-black rounded-circle mr-2"></div>
+                    <Link href={item.href}>{item.name}</Link>
+                </li>
+            )}
         </ul>
     )
 }
