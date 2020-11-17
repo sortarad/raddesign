@@ -3,7 +3,7 @@ import BottomNav from '../../components/bottomNav';
 
 export default function ContactPage() {
     return (
-        <div className="back-white flex flex-col">
+        <div className="back-white flex flex-col pt-4">
             <NavBar />
             <p className="px-4 text-veryLarge leading-large mt-12">YOUNG<br/>LAB</p>
             <p className="px-4 text-3xl mt-12">STUDIO & GALLERY<br/>
