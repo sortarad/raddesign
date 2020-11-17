@@ -1,6 +1,8 @@
 import Head from 'next/head'
-
-const menuData = [""]
+import ImageGallery from '../components/imageGallery';
+import NavBar from '../components/navBar';
+import GetInTouchButton from '../components/getInTouchButton';
+import BottomNav from '../components/bottomNav';
 
 export default function Home() {
   return (
@@ -10,13 +12,9 @@ export default function Home() {
       </Head>
       <div className="flex flex-row">
         <div className="pl-4 w-3/5 mt-5">
-          <ul className="flex flex-row">
-            <li className="mx-4 text-3xl font-bold cursor-pointer">YOUNG LAB</li>
-            <li className="mx-4 text-3xl font-bold cursor-pointer">INFO</li>
-            <li className="mx-4 text-3xl font-bold cursor-pointer">CONTACT</li>
-          </ul>
+          <NavBar />
           <div className="border-2 border-r-0 border-black mt-10">
-            <div className="flex flex-row justify-between items-center pl-6">
+            <div className="flex flex-row justify-between items-center pl-6 pr-6">
               <p className="text-6xl underline">The beauty evolution <br/>of: Kohl eyeliner</p>
               <img src={"../static/arrow.svg"} />
             </div>
@@ -31,16 +29,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-2/5 flex flex-row justify-between">
-          <div className="h-full bg-nativeBlue w-16"></div>
-          <div className="h-full flex-1 overflow-y-scroll bg-black">
-            <div className="flex flex-row justify-between px-4 pt-2 pb-6"> 
-              <p className="text-white text-3xl">BACK</p>
-              <p className="text-white text-3xl">INSTAGRAM</p>
-            </div>
-            <img src={"../static/image13.png"} />
-          </div>
-        </div>
+        <ImageGallery />
       </div>
       <div className="px-4 mt-16">
         <p className="text-3xl leading-7">YOUNG LAB is a global creative studio focused on design, development, and digital output.
@@ -48,11 +37,8 @@ export default function Home() {
         landscapes — bringing to life new digital ecosystems that showcase the breadth of content within a client's portfolio.
           </p>
         <div className="flex flex-row justify-between items-center mt-16">
-          <button className="text-3xl leading-7 text-white px-24 py-5 rounded-circle bg-nativeBlue">GET IN TOUCH</button>
-          <ul className="flex flex-row">
-            <li className="mx-4 text-3xl font-bold cursor-pointer">YOUNG LAB</li>
-            <li className="mx-4 text-3xl font-bold cursor-pointer">CONTACT</li>
-          </ul>
+          <GetInTouchButton />
+          <BottomNav />
         </div>
       </div>
     </div>

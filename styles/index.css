@@ -5,3 +5,19 @@
 body {
     background-color: #FF7A00;
 }
+
+.vertical-r {
+    writing-mode: tb-rl;
+}
+
+.vertical-l {
+    writing-mode: vertical-lr;
+}
+
+.hidden-scrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+.back-white {
+    background-color: white;
+}
