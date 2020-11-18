@@ -12,16 +12,112 @@
     src: local('VT323-Regular'), url(/static/fonts/vt323/VT323-Regular.ttf);
 }
 
-body {
-    background-color: #FF7A00;
-}
-
 .vertical-r {
-    writing-mode: tb-rl;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    padding: 10px;
 }
 
 .vertical-l {
-    writing-mode: vertical-lr;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.responsive-navBar {
+    display: flex;
+    flex-direction: row;
+    font-family: VT323-Regular;
+    margin: 0px 1rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+}
+
+.responsive-navBar-opened {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-family: VT323-Regular;
+    margin: 0px 1rem;
+}
+
+.toggle-menu-button {
+    display: none;
+}
+
+.home-category-menu {
+    border: 2px solid black;
+    border-right: none;
+    margin-top: 2.5rem;
+}
+
+.home-category-menu-closed {
+    border: 2px solid black;
+    border-right: none;
+    margin-top: 2.5rem;
+}
+
+.image-gallery-opened {
+    display: block;
+    width: 40%;
+}
+
+.image-gallery-closed {
+    display: block;
+    width: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+    .vertical-r {
+        transform: rotate(0deg);
+        padding: 0px !important;
+    }
+    
+    .vertical-l {
+        transform: rotate(0deg);
+        padding: 0px !important;
+    }
+
+    .home-category-menu {
+        border-right: 2px solid black;
+        display: block;
+    }
+
+    .home-category-menu-closed {
+        border-right: 2px solid black;
+        display: none;
+    }
+
+    .image-gallery-opened {
+        display: none;
+        width: 100%;
+    }
+
+    .image-gallery-closed  {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-menu-button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .responsive-navBar {
+        display: none;
+    }
+
+    .responsive-navBar-opened {
+        font-size: 1.25rem;
+    }
 }
 
 .hidden-scrollBar::-webkit-scrollbar {

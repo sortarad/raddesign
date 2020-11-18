@@ -16,7 +16,7 @@ module.exports = {
         AbsoluteImageMargin: '364px',
       },
       lineHeight: {
-        'large': '270px',
+        'large': '240px',
         'medium': '170px',
         'small': '120px',
         'verySmall': '70px',
@@ -24,15 +24,20 @@ module.exports = {
       fontSize: {
         '5xl': '2.8rem',
         '6xl': '3.8rem',
-        'veryLarge': '300px',
+        'veryLarge': '248px',
         'medium': '200px',
         'small': '150px',
         'verySmall': '70px',
+      },
+      textColor: {
+        'orange': '#FF7A00'
       }
     },
     backgroundColor: theme => ({
+      orangeBackground: '#FF7A00',
       nativeBlue: '#1549FF',
       black: '#000',
+      white: '#fff',
     }),
     borderRadius: {
       'circle': '50px',

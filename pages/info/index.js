@@ -5,7 +5,7 @@ import BottomNav from '../../components/bottomNav';
 
 export default function InfoPage() {
     return (
-        <div className="flex flex-col lg:flex-row w-full">
+        <div className="flex flex-col lg:flex-row w-full bg-orangeBackground">
             <div className="w-full lg:w-infoBox flex flex-col justify-between pb-24 mt-4 order-1">
                 <NavBar currentNav="info" />
                 <p className="text-xl md:text-2xl px-4 mt-12 xl:mt-24 font-TeX-Regular">YOUNG LAB is a global creative studio focused on design, development, and digital output.
@@ -27,11 +27,10 @@ export default function InfoPage() {
                 <p className="text-white text-2xl w-full text-right px-4 font-VT323-Regular hidden lg:block">INSTAGRAM</p>
                 <h1 className="text-6xl pl-4 lg:pl-24 font-TeX-Regular">Work</h1>
                 <div className="flex flex-col lg:flex-row px-4 lg:px-10 justify-between items-start lg:items-center lg:items-start relative">
-                    <img src={"../../static/image 31.png"} className="w-imageMedium xl:w-imageLarge" />
-                    <img src={"../../static/image 33.png"} className="w-1/4 lg:w-32 xl:w-48 mt-6 lg:mt-0" />
-                    <img src={"../../static/image 32.png"} className="absolute bottom-0 mb-32 lg:-mb-32 ml-48 xl:ml-64 lg:w-48 xl:w-64" />
+                    <img src={"../../static/info.png"} className="w-4/5" />
+                    <img src={"../../static/image 33.png"} className="lg:absolute right-0 top-0 w-1/3 -mt-6 lg:mt-0" />
                 </div>
-                <div className="w-full flex justify-end mt-32 pb-12">
+                <div className="w-full flex justify-end mt-4 pb-12">
                     <BottomNav />
                 </div>
             </div>
