@@ -9,14 +9,25 @@ module.exports = {
       width: {
         'infoBox': '48%',
         'contactTextBox': '70%',
+        'imageLarge': '350px',
+        'imageMedium': '250px',
+      },
+      margin: {
+        AbsoluteImageMargin: '364px',
       },
       lineHeight: {
         'large': '270px',
+        'medium': '170px',
+        'small': '120px',
+        'verySmall': '70px',
       },
       fontSize: {
         '5xl': '2.8rem',
         '6xl': '3.8rem',
         'veryLarge': '300px',
+        'medium': '200px',
+        'small': '150px',
+        'verySmall': '70px',
       }
     },
     backgroundColor: theme => ({
