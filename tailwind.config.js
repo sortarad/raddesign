@@ -31,6 +31,10 @@ module.exports = {
       xlImageBox: '589px',
       circle: '1rem',
     },
+    fontFamily: {
+      'TeX-Regular': ['TeX-Regular'],
+      'VT323-Regular': ['VT323-Regular'],
+    }
   },
   variants: {},
   plugins: [],
